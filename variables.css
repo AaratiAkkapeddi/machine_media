@@ -1,0 +1,24 @@
+:root {
+    --main-bg-color: rgb(188, 188, 188);
+    --font-size-large: 36px;
+    --font-size-medium: 24px;
+    --font-size-small: 16px;
+    --font-family: Arial;
+}
+h1{
+    font-size: var(--font-size-large);
+}
+h4{
+    font-size: var(--font-size-medium);
+}
+caption{
+    font-size: var(--font-size-small);
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+h4{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom:0;
+}
