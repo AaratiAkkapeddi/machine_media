@@ -5,7 +5,7 @@ body{
     font-size: var(--font-size-medium);
     font-family: var(--font-family);
     display: flex;
-    padding:15px;
+    margin:0;
     color: var(--text-color);
 }
 a:link, a:visited, a:hover{
@@ -15,11 +15,27 @@ nav ul{
     padding-left: 0;
     margin-left:0;
 }
+nav li.highlight a{
+    background-color: var(--text-color-emphasis);
+}
 nav li{
     list-style: none;
-    margin-bottom:5px;
+    margin-bottom:10px;
+}
+nav{
+    padding: 30px 15px;
+    flex-basis: 18%;
+    font-size: var(--font-size-small);
+    max-height: calc(100vh - 60px);
+    overflow: scroll;
+    padding-right:25px;
+    border-right: 2px solid;
 }
 .inner{
-    flex-basis: 80%;
+    padding: 30px 60px;
+    flex-basis: 82%;
     margin:0 auto;
+    height: calc(100vh - 60px);
+    overflow: scroll;
+
 }
