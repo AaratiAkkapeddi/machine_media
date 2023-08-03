@@ -4,6 +4,7 @@
     --font-size-medium: 24px;
     --font-size-small: 16px;
     --font-family: Arial;
+    --text-color: #111111;
 }
 h1{
     font-size: var(--font-size-large);

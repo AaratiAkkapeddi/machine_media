@@ -4,4 +4,22 @@ body{
     background-color: var(--main-bg-color);
     font-size: var(--font-size-medium);
     font-family: var(--font-family);
+    display: flex;
+    padding:15px;
+    color: var(--text-color);
+}
+a:link, a:visited, a:hover{
+    color: var(--text-color);
+}
+nav ul{
+    padding-left: 0;
+    margin-left:0;
+}
+nav li{
+    list-style: none;
+    margin-bottom:5px;
+}
+.inner{
+    flex-basis: 80%;
+    margin:0 auto;
 }
