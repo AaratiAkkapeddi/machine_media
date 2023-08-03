@@ -5,6 +5,7 @@ body{
     font-size: var(--font-size-medium);
     font-family: var(--font-family);
     display: flex;
+    flex-direction: row;
     margin:0;
     color: var(--text-color);
 }
@@ -20,7 +21,9 @@ nav li.highlight a{
 }
 nav li{
     list-style: none;
+    background-color: rgb(165, 162, 162);
     margin-bottom:10px;
+    padding:5px;
 }
 nav{
     padding: 30px 15px;
@@ -38,4 +41,30 @@ nav{
     height: calc(100vh - 60px);
     overflow: scroll;
 
+}
+
+@media(max-width:768px) {
+    body{
+        flex-direction: column;
+    }
+    nav ul li{
+        display: inline-block;
+        margin:0;
+        margin-right:5px;
+        padding:5px;
+        max-width: 200px;
+        background-color: rgb(165, 162, 162);
+    }
+    nav ul{
+        display: flex;
+        width: 2500px;
+        margin-bottom: 0;
+    }
+    nav{
+        max-width: 100%;
+        height:auto;
+        padding: 15px;
+        border:none;
+        border-bottom:2px solid;
+    }
 }
