@@ -11,6 +11,8 @@ body{
 }
 a:link, a:visited, a:hover{
     color: var(--text-color);
+    text-decoration: none;
+    border-bottom:2px solid blue;
 }
 nav ul{
     padding-left: 0;
@@ -24,6 +26,13 @@ nav li{
     background-color: rgb(165, 162, 162);
     margin-bottom:10px;
     padding:5px;
+}
+
+nav ul li a,nav ul li a:link{
+    border:none;
+}
+nav ul li a:hover,nav ul li a:link:hover{
+    border-bottom:2px solid blue;
 }
 nav{
     padding: 30px 15px;
@@ -43,6 +52,41 @@ nav{
 
 }
 
+table td{
+    border:1px solid;
+    padding:5px;
+    display: table-cell;
+}
+
+table th{
+    background: rgb(165, 162, 162);
+    font-weight: normal;
+    border:1px solid;
+}
+table{
+    width: 100%;
+}
+table tr:hover td{
+    background-color: var(--text-color-emphasis);
+}
+.generator{
+    font-size:var(--font-size-large);
+    color:blue;
+    margin-top:0;
+}
+.gen{
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: none;
+    margin-bottom:0;
+    cursor: pointer;
+    font-size: inherit;
+    font-size: var(--font-size-medium);
+}
+.gen:hover{
+    color:var(--main-bg-color);
+}
 @media(max-width:768px) {
     body{
         flex-direction: column;
