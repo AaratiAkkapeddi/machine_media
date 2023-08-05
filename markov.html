@@ -5,6 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Machine Media</title>
     <link rel="stylesheet" href="main.css">
+    <style>
+    .wrapper{
+        display: flex;
+        width: 100%;
+    }
+    textarea{
+        width: calc(100% - 20px);
+        height: 400px;
+    }
+    .wrapper *{
+        flex-basis: 50%;
+    }
+    #result{
+        background-color: #ffff0024;
+    }
+    button{
+        background-color: rgb(43, 43, 43);
+        color:white;
+        font-size: 20px;
+        border:none;
+        outline:none;
+        cursor: pointer;
+        padding:5px;
+        margin-top:50px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    button:hover{
+        background-color: black;
+    }
+    
+    </style>
 </head>
 <body>
     <nav>
@@ -16,7 +47,7 @@
             <li><a href="./week4.html"><strong>Week 4:</strong><br> Generative Adversarial Networks </a></li>
             <li><a href="./week5.html"><strong>Week 5:</strong><br> Scrapism, Data, The internet</a></li>
             <li><a href="./week6.html"><strong>Week 6:</strong><br> Data Labor</a></li>
-            <li class="highlight"><a href="./week7.html"><strong>Week 7:</strong><br> Classification, Taxonomies, Computer Vision, Machine Evaluation</a></li>
+            <li><a href="./week7.html"><strong>Week 7:</strong><br> Classification, Taxonomies, Computer Vision, Machine Evaluation</a></li>
             <li><a href="./week8.html"><strong>Week 8:</strong><br> Facial Recognition, Identity, Surveillance</a></li>
             <li><a href="./week9.html"><strong>Week 9:</strong><br> Deepfakes</a></li>
             <li><a href="./week10.html"><strong>Week 10:</strong><br> Writing Images, Text to Image Models</a></li>
@@ -31,9 +62,15 @@
         </ul>
     </nav>
     <div class="inner">
-        <h1>Week 7: Classification, Taxonomies, Computer Vision, Machine Evaluation</h1>
-        <p>coming soon...</p>
-        <a href=""><strong>Homework</strong></a>
+        <h1>Markov Generator</h1>
+        <div class="wrapper">    
+            <div><label>Paste your source text: <br></label><textarea></textarea></div>
+            <div id="result"></div>
+        </div>
+        <label for="n">choose N-gram size: </label>
+        <input id="n" type="number" value="2"/>
+        <script src="markov.js"></script>
+        <script src="main.js"></script>
     </div>
 </body>
 </html>
