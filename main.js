@@ -14,8 +14,7 @@ function setup() {
   //console.log(markov);
   
   // Make the button
-  let button = createButton('generate');
-  button.mousePressed(generate);
+  document.querySelector(".generate").addEventListener("click", generate)
 
   noCanvas();
 }
