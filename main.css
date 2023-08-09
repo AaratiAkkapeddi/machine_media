@@ -84,6 +84,9 @@ table tr:hover td{
     font-size: inherit;
     font-size: var(--font-size-medium);
 }
+figcaption{
+    font-size:16px;
+}
 .gen:hover{
     color:var(--main-bg-color);
 }
