@@ -21,8 +21,8 @@
             <li><a href="./week9.html"><strong>Week 9:</strong><br> Deepfakes</a></li>
             <li><a href="./week10.html"><strong>Week 10:</strong><br> Writing Images, Text to Image Models</a></li>
             <li><a href="./week11.html"><strong>Week 11:</strong><br> AI optimism vs idealism in creative practices, with special focus on Music</a></li>
-            <li><a href="./week12.html"><strong>Week 12:</strong><br> Environmental Impact</a></li>
-            <li><a href="./week13.html"><strong>Week 13:</strong><br> Environmental Impact</a></li>
+            <li><a href="./week12.html"><strong>Week 12:</strong><br> The Digital is Physical: Environmental Impact</a></li>
+            <li><a href="./week13.html"><strong>Week 13:</strong><br> The Digital is Physical: Environmental Impact</a></li>
             <li><a href="./week14.html"><strong>Week 14:</strong><br> Office Hours</a></li>
             <li><a href="./week15.html"><strong>Week 15:</strong><br> Final Presentations</a></li>
             <li class="highlight"><a href="./final.html"><strong>Final Project</strong></a></li>
@@ -31,14 +31,33 @@
     </nav>
     <div class="inner">
         <h1>Final</h1>
-        <h4>Course Description:</h4>
-
-        <p></p>
-        <strong>Submission schedule:</strong> 
-        <br>
+        <p>You and your team will create a training dataset of images together throughout the rest of the semester. At the end of the semester, we will train a Generative Adversarial Network on your dataset. <strong>You will not be assessed on the results of the GAN, but rather the thoughtfulness, care, and consideration of your dataset creation process.</strong> You will need to have <strong>at least 500 images</strong> within your dataset so please take that into consideration when developing your project idea.</p>
+        <strong>Technical Specifications:</strong> 
         <ul>
-            <li><a href="https://docs.google.com/document/d/1cQxokLLwKERp4VOQ0tF76tuqGCpTNNRcLAnr7RkFlJ0/edit?usp=sharing">Datasheet</a> due <strong>October 20th</strong></li>
+            <li>Each image must be square. (You can crop your images down or add extra space on either side to make them square.)</li>
+            <li>You don't need to label your images with categories or descriptions. We will be using <a href='https://github.com/NVlabs/stylegan'>StyleGAN</a> which just takes a dataset of images and generates images based on the training data.</li>
+            <li>You can be use .jpg or .png file format but <strong>make sure all your files are the same file type (so all jpegs or all pngs)</strong></li>
+            <li>If you are downloading or scraping images, you must have the legal right to use these images (i.e. they are public domain)</li>
+            <li>You will upload your dataset to a google drive folder that I will create for your group.</li>
         </ul>
+        <strong>Tips:</strong>
+        <ul>
+            <li>Try to keep your images a <em>maximum</em> of 1024px by 1024px and/or under 1mb so that you don't have to keep transferring super large files to your drive.</li>
+            <li>Upload as you go. Don't wait until the last minute to transfer your images to the google drive (you don't want a situation where your external harddrive breaks, or phone gets stolen and you lose all your work!)</li>
+            <li>The more homogenous your images are, the "better" your GAN will work. The more diverse your images are, the more images you need to get an output that resembles the input images.</li>
+            <li>In regards to the above point, you can edit your images to <em>create</em> homogeneity. For example, I have done this with a dataset of faces where I used facial recognition to align the images so that the eyes are in the same position across the images. Reach out to me if you have alignment questions and I will be able to tell you whether alignment can be automated or needs to be manually done.</li>
+            <li>If you are downloading or scraping images and need to crop them to be square all at once, I have a script for automating this. Please reach out to me.</li>
+        </ul>
+        <strong>Submission schedule:</strong> 
+        <ul>
+            <li><a href="https://docs.google.com/presentation/d/1ElGhkXYaWmjQ3JAN8Cm5IpRgPyLOdf0eRpiSEuoCxuY/edit?usp=sharing">5-minute concept presentation</a> due <strong>Week 7, October 20th</strong></li>
+            <li><a href="https://docs.google.com/document/d/1cQxokLLwKERp4VOQ0tF76tuqGCpTNNRcLAnr7RkFlJ0/edit?usp=sharing">Datasheet</a> due <strong>Week 7, October 20th</strong></li>
+            <li>at least 50% of Dataset due <strong>Week 12, December 1st</strong></li>
+            <li><em>If you want me to help you train a model on your dataset before the final presentation</em>, your dataset needs to be done by <strong>Week 13, December 8th</strong></li>
+            <li>Otherwise, dataset due <strong>Week 14, December 15th</strong></li>
+            <li><a href="https://docs.google.com/presentation/d/1ktDJ2quv1p-Yr8x8VmSuMG5GGBLg9dPL_vojXbmBhAI/edit?usp=sharing">Final Presentations</a> <strong>Week 15, December 15th</strong></li>
+        </ul>
+        <strong>Inspo:</strong> <a href="https://www.are.na/aarati-akkapeddi/handmade-datasets">https://www.are.na/aarati-akkapeddi/handmade-datasets</a>
        
     </div>
 </body>
