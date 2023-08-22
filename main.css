@@ -1,5 +1,4 @@
 @import url(./variables.css);
-
 body{
     background-color: var(--main-bg-color);
     font-size: var(--font-size-medium);
@@ -23,7 +22,7 @@ nav li.highlight a{
 }
 nav li{
     list-style: none;
-    background-color: rgb(165, 162, 162);
+    background-color: rgb(188, 187, 187);
     margin-bottom:10px;
     padding:5px;
 }

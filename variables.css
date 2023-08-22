@@ -1,9 +1,23 @@
+@font-face {
+    font-family: "Compagnon";
+    src: url("type/Compagnon-Medium.eot") format("opentype"),
+    url('type/Compagnon-Medium.woff') format("woff"),
+    url('type/Compagnon-Medium.woff2') format("woff2");
+}
+@font-face {
+    font-family: "Uncut Sans";
+    src: url("type/UncutSans-Light.woff") format("woff"),
+    url("type/UncutSans-Light.woff2") format("woff2");
+}
+
 :root {
     --main-bg-color: #dbd7d2;
     --font-size-large: 36px;
     --font-size-medium: 24px;
     --font-size-small: 16px;
-    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    --font-family: 'Uncut Sans';
+    --font-family-emphasis:'Compagnon';
     --text-color: #111111;
     --text-color-emphasis: #ffff0083;
 }
@@ -19,6 +33,10 @@ caption{
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: normal;
+    font-family: var(--font-family-emphasis);
+}
+strong{
+    font-family: var(--font-family-emphasis);
 }
 h4{
     text-transform: uppercase;
