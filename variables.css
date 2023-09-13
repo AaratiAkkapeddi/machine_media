@@ -21,6 +21,14 @@
     --text-color: #111111;
     --text-color-emphasis: #ffff0083;
 }
+
+@media(max-width: 768px){
+    :root{
+       --font-size-large:24px;
+       --font-size-medium:18px;
+    }
+    
+}
 h1{
     margin-top:0;
     font-size: var(--font-size-large);
