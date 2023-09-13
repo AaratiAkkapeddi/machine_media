@@ -13,6 +13,9 @@ a:link, a:visited, a:hover{
     text-decoration: none;
     border-bottom:2px solid blue;
 }
+img{
+    max-width: 100%;
+}
 nav ul{
     padding-left: 0;
     margin-left:0;
@@ -89,6 +92,19 @@ figcaption{
 .work img{
     width: 50%;
 }
+#banner{
+    padding:10px;
+    font-size:18px;
+    border:2px solid;
+    text-align: center;
+    font-weight: bold;
+    bottom:0;
+    background-color: rgb(243, 122, 122);
+    color: #111;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
 hr{
     border:none;
     border-bottom: 2px dotted #111;
@@ -109,10 +125,20 @@ hr{
         max-width: 200px;
         background-color: rgb(165, 162, 162);
     }
+    table{
+        display: none;
+    }
     nav ul{
         display: flex;
         width: 2500px;
         margin-bottom: 0;
+    }
+    .desktop-only{
+        display: none;
+    }
+    .inner{
+        padding:10px;
+        padding-bottom:100px;
     }
     nav{
         max-width: 100%;
