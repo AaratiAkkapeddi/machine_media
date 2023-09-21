@@ -90,6 +90,10 @@ figcaption{
     font-size:16px;
 }
 .work img{
+    width: 45%;
+    display: inline-block;
+}
+.top-img{
     width: 50%;
 }
 #banner{
