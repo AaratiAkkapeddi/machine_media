@@ -51,12 +51,72 @@ img{
 a, a:link, a:visited{
     color:inherit;
 }
+nav{
+    display: block;
+    position:fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+nav svg path{
+    transition: 0.2s;
+}
+nav.open svg path:last-child,nav.open svg path:nth-child(2){
+    opacity: 0;
+}
+
+nav ul{
+  background-color: var(--bg-color);
+  display: none;
+  width: 100%;
+  font-size: var(--font-size-medium);
+  font-family: var(--font-display);
+  position: absolute;
+  z-index: -1;
+  top:0;
+  left:0;
+  text-align: center;
+}
+nav svg{
+    width: 100px;
+    padding: var(--outer-margin);
+    z-index: 1;
+    position:absolute;
+}
+nav.open ul{
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+
+
 
 @media (max-width: 768px) {
     :root{
-        --font-size-large: 24px;
+        --font-size-large: 32px;
+        --font-size-medium: 24px;
         --font-size-body: 18px;
         --outer-margin: 10px;
         --main-width: 768px;
+    }
+    nav svg{
+        width: 50px;
+    }
+    nav{
+        background-color: var(--bg-color);
+        width: 100%;
+        min-height: 80px;
+    }
+    main{
+        margin-top: 80px;
+        height: calc(100vh - (80px + (var(--outer-margin) * 2)));
     }
 }
