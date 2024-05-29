@@ -96,7 +96,25 @@ nav.open ul{
     list-style: none;
 }
 
-
+th{
+    font-family: var(--font-display);
+    font-weight: normal;
+    text-align: left;
+    padding: 5px;
+    border:1px solid;
+}
+tr{
+ padding: 10px 5px;
+ border:1px solid;
+}
+td{
+    border:1px solid;
+    padding: 5px;
+}
+table{
+    /* border:1px solid; */
+   border-color: var(--fg-color);
+}
 
 
 @media (max-width: 768px) {
