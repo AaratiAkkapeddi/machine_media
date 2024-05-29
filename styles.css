@@ -28,6 +28,8 @@ main{
     padding: var(--outer-margin);
     max-width: var(--main-width);
     margin: 0 auto;
+    height: calc(100vh - (var(--outer-margin) * 2));
+    overflow:scroll;
     background: var(--bg-color2);
 }
 
@@ -42,6 +44,12 @@ h4{
     font-family: var(--font-display);
     margin-bottom:0.5em;
 
+}
+img{
+    width: 100%;
+}
+a, a:link, a:visited{
+    color:inherit;
 }
 
 @media (max-width: 768px) {
